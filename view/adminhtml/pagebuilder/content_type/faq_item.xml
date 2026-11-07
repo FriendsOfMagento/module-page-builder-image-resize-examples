@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_PageBuilder:etc/content_type.xsd">
+    <type name="faq-item">
+        <appearances>
+            <appearance name="default">
+                <elements>
+                    <element name="image">
+                        <attribute name="image_resize_desktop" source="data-image-resize-desktop" />
+                    </element>
+                </elements>
+                <converters>
+                    <converter name="image_resize_desktop" component="Fom_PageBuilderImageResize/js/mass-converter/image-resize">
+                        <config>
+                            <item name="attribute_name" value="image_resize_desktop" />
+                        </config>
+                    </converter>
+                </converters>
+            </appearance>
+        </appearances>
+    </type>
+</config>

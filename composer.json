@@ -1,0 +1,34 @@
+{
+    "name": "fom/module-page-builder-image-resize-examples",
+    "description": "Image resize support for the official Page Builder FAQ and Quote example content types",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Friends of Magento",
+            "homepage": "https://github.com/FriendsOfMagento"
+        }
+    ],
+    "homepage": "https://github.com/FriendsOfMagento/module-page-builder-image-resize-examples",
+    "support": {
+        "issues": "https://github.com/FriendsOfMagento/module-page-builder-image-resize-examples/issues",
+        "source": "https://github.com/FriendsOfMagento/module-page-builder-image-resize-examples"
+    },
+    "require": {
+        "php": ">=8.1",
+        "fom/module-page-builder-image-resize": "*",
+        "magento/framework": "*",
+        "magento/module-page-builder": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Fom\\PageBuilderImageResizeExamples\\": ""
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
